@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+ web-server:
+    build: 
+      context: .
+    ports:
+     - 80:6543
+    volumes:
+     - ./src:/app
+    container_name: agile-web
